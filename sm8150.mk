@@ -109,7 +109,8 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvisualizer \
     libvolumelistener \
-    tinymix
+    tinymix \
+    libldacBT_bco
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(COMMON_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
