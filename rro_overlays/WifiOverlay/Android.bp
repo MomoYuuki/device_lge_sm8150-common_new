@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "WifiOverlay.lge_sm8150",
+    name: "WifiOverlay",
     theme: "WifiOverlay",
     certificate: "platform",
     sdk_version: "current",
