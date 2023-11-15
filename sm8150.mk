@@ -189,8 +189,7 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4.vendor
 
 # F2FS
 PRODUCT_PACKAGES += \
@@ -221,6 +220,7 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
 # HIDL
@@ -405,16 +405,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
 
-# Resolution Changer
-PRODUCT_PACKAGES += \
-    ResolutionChanger
-
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite     \
     libril \
     librilutils \
     librmnetctl \
