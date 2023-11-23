@@ -189,7 +189,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor
+    android.hardware.drm@1.4.vendor \
+    android.hardware.drm-service.clearkey
 
 # F2FS
 PRODUCT_PACKAGES += \
@@ -221,6 +222,7 @@ PRODUCT_COPY_FILES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
+    android.hardware.health@2.1.vendor \
     android.hardware.health@2.1-service
 
 # HIDL
